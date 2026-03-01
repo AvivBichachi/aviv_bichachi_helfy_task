@@ -1,0 +1,100 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+}
+
+.carouselBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    background: #2a2a2a;
+    color: #fff;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.carouselBtn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.viewport {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 12px;
+    min-width: 0;
+    min-height: 170px;
+}
+
+.track {
+    display: flex;
+    width: 100%;
+    transform: translateX(-100%);
+    will-change: transform;
+}
+
+.track.animate {
+    transition: transform 280ms ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: 1px solid #777;
+    background: transparent;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #777;
+}
+
+.priority {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.priority-low {
+  background: rgba(60, 180, 75, 0.15);
+  color: #3cb44b;
+}
+
+.priority-medium {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+.priority-high {
+  background: rgba(220, 53, 69, 0.15);
+  color: #dc3545;
+}
+
