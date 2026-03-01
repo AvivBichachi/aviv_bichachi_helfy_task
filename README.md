@@ -13,9 +13,9 @@ The application allows users to create, update, delete and manage tasks with fil
 - Mark task as completed / todo
 - Set task priority (low / medium / high)
 - Filtering & Search
-- Search by title
-- Filter by status (All / Todo / Done)
-- Filter by priority
+   - Search by title
+   - Filter by status (All / Todo / Done)
+   - Filter by priority
 - Endless Carousel
 
 
